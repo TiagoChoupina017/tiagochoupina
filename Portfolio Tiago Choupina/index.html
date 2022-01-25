@@ -39,6 +39,23 @@
       ::-webkit-scrollbar-thumb:hover {
           background: #555; 
       }
+
+
+
+
+      .containernb {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
   </style>
 </head>
 
@@ -54,25 +71,31 @@
 <body>
     
 <div class="bg">
-    <div class="container">
-        <header class="d-flex justify-content-center py-3">
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="index.html" class="nav-link text-white active">Início</a></li>
-            <li class="nav-item"><a href="habilidades.html" class="nav-link text-white opacity-hover">Competências Técnicas</a></li>
-            <li class="nav-item"><a href="experiencia.html" class="nav-link text-white opacity-hover">Experiência</a></li>
-            <li class="nav-item"><a href="projetos.html" class="nav-link text-white opacity-hover">Trabalhos/Projetos</a></li>
-            <li class="nav-item"><a href="sobre.html" class="nav-link text-white opacity-hover">Sobre</a></li>
-          </ul>
-        </header>
-      </div>
+    <!--MENU-->
+<header class="d-flex flex-wrap justify-content-center py-3" style="background-color: black;">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" style="padding-left: 15px;">
+  <img src="logo-light.png" class="bi me-2" width="40px" height="40px">
+    <span class="fs-4 text-light">Tiago Choupina</span>
+  </a>
+
+  <ul class="nav nav-pills" style="padding-right: 15px;">
+    <li class="nav-item"><a href="index.html" class="nav-link px-2 link-light">Início</a></li>
+    <li class="nav-item"><a href="habilidades.html" class="nav-link px-2 link-light">Competências Técnicas</a></li>
+    <li class="nav-item"><a href="experiencia.html" class="nav-link px-2 link-light">Experiência</a></li>
+    <li class="nav-item"><a href="projetos.html" class="nav-link px-2 link-light">Trabalhos/Projetos</a></li>
+    <li class="nav-item"><a href="sobre.html" class="nav-link px-2 link-light">Sobre</a></li>
+  </ul>
+</header>
+<!--/MENU-->
 
       <br><br><br><br>
 
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <br><br><br><br>
-            <h3 class="text-white text-center display-2">Portfólio de Tiago Choupina</h3>
+            <br><br>
+            <br><br>
+                <h3 class="text-white text-center display-2" style="background: rgba(128, 128, 128, 0.637); width: 65%; margin: auto;">Portfólio de Tiago Choupina</h3>
           </div>
         </div>
       </div>
