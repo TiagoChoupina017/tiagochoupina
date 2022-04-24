@@ -1,0 +1,115 @@
+@font-face {
+    font-family: fonte1;
+    src: url(SquarePeg-Regular.ttf);
+}
+
+.fonte1{
+    font-family: fonte1;
+}
+
+.btn-logo{
+    opacity: 100%;
+}
+
+.btn-logo:hover{
+    opacity: 70%;
+}
+
+.perfil-img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.shadow1 {
+    -moz-box-shadow:    3px 3px 5px 6px rgb(178, 178, 178);
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(178, 178, 178);
+    box-shadow:         3px 3px 5px 6px rgb(178, 178, 178);
+}
+
+.containerimg {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    border-radius: 8px;
+  }
+  
+  .containerimg:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+@media only screen and (max-width: 1199px){
+    .hide1{
+      display: none;
+    }
+
+    .hide2{
+        display: block;
+    }
+    .size1{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .hide1{
+    display: block;
+    }
+
+    .hide2{
+        display: none;
+    }
+
+    .size1{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 853px){
+    .hide3{
+        display: none;
+    }
+
+    .hide4{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 854px){
+    .hide3{
+        display: block;
+    }
+
+    .hide4{
+        display: none;
+    }
+}
