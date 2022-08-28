@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1199px){
+    .hide1{
+      display: none;
+    }
+
+    .hide2{
+        display: block;
+    }
+    .size1{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .hide1{
+    display: block;
+    }
+
+    .hide2{
+        display: none;
+    }
+
+    .size1{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 853px){
+    .hide3{
+        display: none;
+    }
+
+    .hide4{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 854px){
+    .hide3{
+        display: block;
+    }
+
+    .hide4{
+        display: none;
+    }
+}

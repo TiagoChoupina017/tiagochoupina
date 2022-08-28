@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="perfil.png" type="image/png">
+
+    <title>Tiago Choupina - Official Website</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <link href="font.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
+    
+</head>
+<body style="background-color: white">
+
+<style>
+    @keyframes fadein {
+        0%   {opacity:0;}
+        100% {opacity:1;}
+    }
+
+*{
+    animation-name: fadein;
+    animation-duration: 0.8s;
+}
+</style>
+
+<!--MENU-->
+<style>
+    body {
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+nav {
+padding-top: 15px;
+  padding-right: 30px;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li:not(:first-child) {
+  margin-left: 25px;
+}
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color: #1f2227;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+nav ul li a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+@media screen and (max-width: 560px) {
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #1f2227;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  .nav-container ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .nav-container ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .nav-container ul li:nth-child(1) a {
+    transition-delay: 0.2s;
+  }
+  .nav-container ul li:nth-child(2) a {
+    transition-delay: 0.3s;
+  }
+  .nav-container ul li:nth-child(3) a {
+    transition-delay: 0.4s;
+  }
+  .nav-container ul li:nth-child(4) a {
+    transition-delay: 0.5s;
+  }
+  .nav-container ul li:not(:first-child) {
+    margin-left: 0;
+  }
+  .nav-container ul li a {
+    padding: 10px 25px;
+    opacity: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+  }
+  .nav-open {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+  }
+  .nav-open i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1f2227;
+    border-radius: 2px;
+    margin-left: 14px;
+  }
+  .nav-open i:nth-child(1) {
+    margin-top: 16px;
+  }
+  .nav-open i:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+  .nav-open i:nth-child(3) {
+    margin-top: 4px;
+  }
+}
+#nav:checked + .nav-open {
+  transform: rotate(45deg);
+}
+#nav:checked + .nav-open i {
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+#nav:checked + .nav-open i:nth-child(1) {
+  transform: translateY(6px) rotate(180deg);
+}
+#nav:checked + .nav-open i:nth-child(2) {
+  opacity: 0;
+}
+#nav:checked + .nav-open i:nth-child(3) {
+  transform: translateY(-6px) rotate(90deg);
+}
+#nav:checked ~ .nav-container {
+  z-index: 9990;
+  opacity: 1;
+}
+#nav:checked ~ .nav-container ul li a {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hidden {
+  display: none;
+}
+
+
+</style>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-6" style="padding-top: 20px;">
+            <a href="index.html" target="_self" style="text-decoration: none;">
+                <img src="perfil.jpeg" style="width: 60px; border-radius: 100%;">
+                &nbsp &nbsp<label style="color: #96031A; font-size: 20px; font-family: roboto-bold;">Tiago Choupina</label>
+            </a>
+        </div>
+
+        <div class="col-sm-6">
+            <nav>
+                <input type="checkbox" id="nav" class="hidden"/>
+                <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                <div class="nav-container">
+                    <ul style="font-family: roboto-regular;">
+                        <li><a href="index.html" target="_self">Início</a></li>
+                        <li><a href="music.html" target="_self" style="color: #faa916;">Música</a></li>
+                        <li><a href="work.html" target="_self">Portfólio</a></li>
+                        <li><a href="https://whynottribe.github.io/band/" target="_blank">¿ WHY NOT TRIBE ?</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+<!--/MENU-->
+
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3X9GWej1qkgwgAIaxtHqUH?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+
+<br><br>
+
+<!--ANUNCIO-RECENTE-->
+<!--The Dawn-->
+<div class="container hide3">
+    <div class="row">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-5">
+            <br><br>
+            <h2 style="font-family: roboto-regular; color: #FAA916;">The Dawn (Single)</h2>
+            <p style="text-align: justify; font-family: roboto-thin;">Este single foi inpirado numa madrugada em que o artista não conseguia dormir, então, ele foi para a janela do seu quarto ver o sol nascer e, enquanto isso, passavam-se-lhe pensamentos aleatórios na sua cabeça.
+            <br><br>
+            <a href="https://youtu.be/a-IY5OOYumk" target="_blank" class="btn btn-outline-danger">Ver no YouTube</a></p>
+        </div>
+
+        <div class="col-sm-5 hide1">
+            <center>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/a-IY5OOYumk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+
+        <div class="col-sm-5 hide2">
+            <img src="TheDawnCapa.jpg" style="width: 100%; border-radius: 8px;">
+        </div>
+
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+
+<div class="container hide4">
+    <div class="row">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-5 hide1">
+            <center>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/a-IY5OOYumk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+
+        <div class="col-sm-5 hide2">
+            <img src="TheDawnCapa.jpg" style="width: 100%; border-radius: 8px;">
+        </div>
+
+        <div class="col-sm-5">
+            <br><br>
+            <h2 style="font-family: roboto-regular; color: #FAA916;">The Dawn (Single)</h2>
+            <p style="text-align: justify; font-family: roboto-thin;">Este single foi inpirado numa madrugada em que o artista não conseguia dormir, então, ele foi para a janela do seu quarto ver o sol nascer e, enquanto isso, passavam-se-lhe pensamentos aleatórios na sua cabeça.
+            <br><br>
+            <a href="https://youtu.be/a-IY5OOYumk" target="_blank" class="btn btn-outline-danger">Ver no YouTube</a></p>
+        </div>
+
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+<!--/The Dawn-->
+
+<br>
+
+<!--MY LIFE-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-5 hide1">
+            <center>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJuq1YaIQ8mKT7hERRtWa1X7aNr8GRr3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+
+        <div class="col-sm-5 hide2">
+            <img src="MyLifeCapa.jpeg" style="width: 100%; border-radius: 8px;">
+        </div>
+
+        <div class="col-sm-5">
+            <br><br>
+            <h2 style="font-family: roboto-regular; color: #FAA916;">My Life (Álbum)</h2>
+            <p style="text-align: justify; font-family: roboto-thin;">Este álbum foi inspirado em várias fazes da vida do artista, correspondendo a cada música uma fase da vida do mesmo.
+            <br><br>
+            <a href="https://youtube.com/playlist?list=PLJuq1YaIQ8mKT7hERRtWa1X7aNr8GRr3m" target="_blank" class="btn btn-outline-danger">Ver no YouTube</a></p>
+        </div>
+
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+<!--/MY LIFE-->
+
+<br>
+
+<!--4U-->
+<div class="container hide3">
+    <div class="row">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-5">
+            <br><br>
+            <h2 style="font-family: roboto-regular; color: #FAA916;">4U (Álbum)</h2>
+            <p style="text-align: justify; font-family: roboto-thin;">Este álbum foi inspirado na namorada do artista e bons momentos da vida do mesmo.
+            <br><br>
+            <a href="https://youtube.com/playlist?list=PLJuq1YaIQ8mKIVjnw5B96J8DeDKnWP4zO" target="_blank" class="btn btn-outline-danger">Ver no YouTube</a></p>
+        </div>
+
+        <div class="col-sm-5 hide1">
+            <center>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJuq1YaIQ8mKIVjnw5B96J8DeDKnWP4zO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+
+        <div class="col-sm-5 hide2">
+            <img src="4UCapa.jpeg" style="width: 100%; border-radius: 8px;">
+        </div>
+
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+
+<div class="container hide4">
+    <div class="row">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-5 hide1">
+            <center>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJuq1YaIQ8mKIVjnw5B96J8DeDKnWP4zO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+
+        <div class="col-sm-5 hide2">
+            <img src="4UCapa.jpeg" style="width: 100%; border-radius: 8px;">
+        </div>
+
+        <div class="col-sm-5">
+            <br><br>
+            <h2 style="font-family: roboto-regular; color: #FAA916;">4U (Álbum)</h2>
+            <p style="text-align: justify; font-family: roboto-thin;">Este álbum foi inspirado na namorada do artista e bons momentos da vida do mesmo.
+            <br><br>
+            <a href="https://youtube.com/playlist?list=PLJuq1YaIQ8mKIVjnw5B96J8DeDKnWP4zO" target="_blank" class="btn btn-outline-dark">Ver no YouTube</a></p>
+        </div>
+
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+<!--/4U-->
+<!--/ANUNCIO-RECENTE-->
+
+<br><br>
+
+<!--SOBRE-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+            <img src="img-2.JPG" style="width: 100%; border-radius: 8px;">
+        </div>
+        <div class="col-sm-5">
+            <br><br>
+            <h2 style="font-family: roboto-regular; color: #FAA916">Sobre</h2>
+            <p style="text-align: justify; font-family: roboto-thin;">Tiago Choupina é músico e produtor. Ele tem vários projetos próprios e também com sua banda ¿ WHY NOT TRIBE ? .</p>
+            <p style="text-align: justify; font-family: roboto-thin;">Tiago Choupina lançou o seu primeiro single oficial, "Your Vibe" em 2020. Tiago estava a estudar guitarra numa academia de música mas passados ​​4 anos saiu e continuou como autodidata. Ele decidiu aprofundar seus conhecimentos em produção musical e também começou a tocar teclado.</p>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+<!--/SOBRE-->
+
+<br>
+
+<footer class="py-3 my-4">
+    <hr>
+    <p class="text-center text-muted">© 2021 Designed by Tiago Choupina</p>
+  </footer>
+
+</body>
+</html>
