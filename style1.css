@@ -44,3 +44,11 @@
         display: none;
     }
 }
+
+.linkCursor{
+    text-decoration: none;
+}
+
+.linkCursor:hover{
+    cursor: pointer;
+}

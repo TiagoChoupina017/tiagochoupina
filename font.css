@@ -12,3 +12,8 @@
     font-family: roboto-regular;
     src: url(Roboto-Regular.ttf);
 }
+
+@font-face {
+    font-family: letraCurva;
+    src: url(MsMadi-Regular.ttf);
+}
